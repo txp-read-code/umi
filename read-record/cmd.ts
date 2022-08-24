@@ -19,6 +19,7 @@ function getDirTree(beforePath: string, options?: { isRead: boolean }): object {
   const general = [
     // git文件
     '^\\.git$',
+    '^\\.vscode$',
     // 测试文件
     '\\.test.ts$',
     // readcode自动生成的文件
@@ -82,10 +83,10 @@ function getIsRead(paths: string) {
   } catch (error) {
     const str = fs.readFileSync(paths, { encoding: 'utf-8' });
     const start = [
-      `^# ${tagName}`,
-      `^// ${tagName}`,
-      `^<!-- ${tagName}`,
-      `^{\n  "${tagName}"`,
+      `# ${tagName}`,
+      `// ${tagName}`,
+      `<!-- ${tagName}`,
+      `^{[\\s\\S]*"${tagName}"[\\s\\S]*}\n$`,
     ];
     let isRead = false;
     start.forEach((element) => {
