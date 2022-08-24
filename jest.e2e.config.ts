@@ -1,3 +1,4 @@
+// READCODE e2e配置文件
 import { Config, createConfig } from 'umi/test';
 
 export default {

@@ -1,4 +1,5 @@
 {
+  "READCODE": "turbo配置文件",
   "$schema": "https://turborepo.org/schema.json",
   "baseBranch": "origin/master",
   "pipeline": {

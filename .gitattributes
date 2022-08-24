@@ -1,2 +1,3 @@
+# READCODE 这个文件允许你指定当执行 git commit 等 git 动作时，应该被 git 使用的文件和路径的属性（attributes）。
 **/compiled/** linguist-vendored
 .husky/* linguist-vendored

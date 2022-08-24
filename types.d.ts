@@ -1,3 +1,4 @@
+// READCODE doc文档的类型文件
 declare module '*.png' {
   const src: string
   export default src

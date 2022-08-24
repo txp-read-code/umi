@@ -1,3 +1,4 @@
+// READCODE doc文档的主题配置
 // @ts-ignore
 import UmiLogo from './packages/plugin-docs/client/theme-doc/icons/umi.png';
 

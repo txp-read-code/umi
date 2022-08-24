@@ -1,3 +1,4 @@
+# READCODE pnpm多仓库配置
 packages:
   - 'packages/*'
   - 'examples/*'

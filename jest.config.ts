@@ -1,3 +1,4 @@
+// READCODE 测试配置文件
 import { Config, createConfig } from 'umi/test';
 
 export default {

@@ -1,3 +1,4 @@
+# READCODE git不追踪哪儿些文件的配置
 /node_modules
 /examples/*/.esmi
 /examples/*/.mfsu

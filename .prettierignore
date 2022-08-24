@@ -1,3 +1,4 @@
+# READCODE prettier忽略的一些文件
 node_modules
 .umi
 .umi-production

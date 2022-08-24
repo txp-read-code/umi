@@ -1,4 +1,5 @@
 {
+  "READCODE": "ts基础配置，会被其他ts配置文件继承",
   "compilerOptions": {
     "declaration": true,
     "esModuleInterop": true,

@@ -1,3 +1,4 @@
+// READCODE doc文档的umi配置
 export default {
   favicons: [
     'https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg',

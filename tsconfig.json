@@ -1,4 +1,5 @@
 {
+  "READCODE": "ts配置文件",
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "baseUrl": ".",

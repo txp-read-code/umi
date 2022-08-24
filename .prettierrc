@@ -1,4 +1,5 @@
 {
+  "READCODE": "prettier的配置",
   "printWidth": 80,
   "singleQuote": true,
   "trailingComma": "all",

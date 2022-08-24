@@ -1,3 +1,4 @@
+// READCODE-type core
 import {
   AsyncSeriesWaterfallHook,
   SyncWaterfallHook,
@@ -88,13 +89,16 @@ export class Service {
   } = {};
   pkgPath: string = '';
 
+  // READCODE 构造函数赋值cwd env opt，断言cwd是否存在
   constructor(opts: IOpts) {
     this.cwd = opts.cwd;
     this.env = opts.env;
     this.opts = opts;
+    // READCODE nodejs api assert 断言 assert(这个参数为false会抛出异常并提示,这个参数是提示)
     assert(existsSync(this.cwd), `Invalid cwd ${this.cwd}, it's not found.`);
   }
 
+  // READCODE 应用插件函数，通过重载来实现事件同步
   // overload, for apply event synchronously
   applyPlugins<T>(opts: {
     key: string;
@@ -234,6 +238,7 @@ export class Service {
     }
   }
 
+  // READCODE 运行函数
   async run(opts: { name: string; args?: any }) {
     const { name, args = {} } = opts;
     args._ = args._ || [];

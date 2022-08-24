@@ -100,6 +100,7 @@
     "node": ">=14",
     "pnpm": ">=7"
   },
+  "READCODE": "主包",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [

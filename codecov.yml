@@ -1,2 +1,3 @@
+# READCODE 覆盖率配置
 github_checks:
   annotations: false
