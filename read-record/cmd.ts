@@ -91,18 +91,23 @@ const tree = getDirTree(rootPath);
 function getMd(obj: object, arr: string[]) {
   let str = '';
   Object.entries(obj).map((item) => {
-    str = str + `${arr.join('')}- ${item[0]}\n`;
     if (item[1]?.dir) {
-      str = str + getMd(item[1]?.dir, [...arr, '  ']);
+      const childStr = getMd(item[1]?.dir, [...arr, '  ']);
+      const isRead = !childStr.includes('[ ]') ? '*' : ' ';
+      str = str + `${arr.join('')}- [${isRead}] ${item[0]}\n`;
+      str = str + childStr;
+    } else {
+      const isRead = item[1]?.isRead ? '*' : ' ';
+      str = str + `${arr.join('')}- [${isRead}] ${item[0]}\n`;
     }
   });
   return str;
 }
 fs.writeFileSync(path.join(__dirname, 'tree.json'), JSON.stringify(tree));
 const percent = ((readFile / allFile) * 100).toFixed(2);
-const statisticalPanel = `allFile: ${allFile}  readFile: ${readFile} percent: ${percent}%
+const statisticalPanel = `\# Statistical\n\n\#\# Panel\n\nallFile: ${allFile}  readFile: ${readFile} percent: ${percent}%
 `;
 fs.writeFileSync(
   path.join(__dirname, 'statistical.md'),
-  statisticalPanel + '\n' + getMd(tree, ['']),
+  statisticalPanel + '\n## Detail\n\n' + getMd(tree, ['']),
 );
