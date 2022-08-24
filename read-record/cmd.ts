@@ -17,14 +17,23 @@ let readFile = 0;
 
 function getDirTree(beforePath: string, options?: { isRead: boolean }): object {
   const general = [
+    // git文件
     '^\\.git$',
+    // 测试文件
     '\\.test.ts$',
+    // readcode自动生成的文件
     '^read-record$',
+    // lock
     '^pnpm-lock\\.yaml$',
+    // 许可证
     '^LICENSE$',
+    // 文本文件
     '\\.md$',
+    // 包文件
     '^node_modules$',
+    // 打包的文件
     '^dist$',
+    // .husky的无效文件
     '^\\_$',
   ];
   const umi = ['^compiled$', '^fixtures$', '^examples$', '^.turbo$'];

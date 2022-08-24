@@ -340,7 +340,7 @@
   },
   "jest.turbo.config.ts": {
     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/jest.turbo.config.ts",
-    "isRead": true
+    "isRead": false
   },
   "lerna.json": {
     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/lerna.json",

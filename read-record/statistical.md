@@ -2,7 +2,7 @@
 
 ## Panel
 
-allFile: 772  readFile: 105 percent: 13.60%
+allFile: 772  readFile: 104 percent: 13.47%
 
 ## Detail
 
@@ -86,7 +86,7 @@ allFile: 772  readFile: 105 percent: 13.60%
 - [*] global.ts
 - [*] jest.config.ts
 - [*] jest.e2e.config.ts
-- [*] jest.turbo.config.ts
+- [ ] jest.turbo.config.ts
 - [*] lerna.json
 - [*] package.json
 - [ ] packages
