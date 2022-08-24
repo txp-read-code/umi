@@ -242,18 +242,23 @@ export class Service {
   async run(opts: { name: string; args?: any }) {
     const { name, args = {} } = opts;
     args._ = args._ || [];
+    // READCODE 删除自己的命令参数，如umi dev要去掉dev这个参数
     // shift the command itself
     if (args._[0] === name) args._.shift();
     this.args = args;
     this.name = name;
 
+    // READCODE init阶段
     // loadEnv
     this.stage = ServiceStage.init;
+    // READCODE 加载环境，通过.env文件
     loadEnv({ cwd: this.cwd, envFile: '.env' });
+    // READCODE 获取pkg的路径和json对象
     // get pkg from package.json
     let pkg: Record<string, string | Record<string, any>> = {};
     let pkgPath: string = '';
     try {
+      // READCODE 这里可以提炼优化
       pkg = require(join(this.cwd, 'package.json'));
       pkgPath = join(this.cwd, 'package.json');
     } catch (_e) {
@@ -269,6 +274,7 @@ export class Service {
     this.pkgPath = pkgPath || join(this.cwd, 'package.json');
 
     const prefix = this.opts.frameworkName || DEFAULT_FRAMEWORK_NAME;
+    // READCODE 获取用户配置
     // get user config
     const configManager = new Config({
       cwd: this.cwd,
@@ -279,6 +285,7 @@ export class Service {
 
     this.configManager = configManager;
     this.userConfig = configManager.getUserConfig().config;
+    // READCODE 通过cwd、环境、前缀获取一系列路径
     // get paths
     const paths = getPaths({
       cwd: this.cwd,
@@ -289,6 +296,7 @@ export class Service {
     // the value of paths may be updated by plugins later
     this.paths = paths;
 
+    // READCODE 解析初始预设和插件
     // resolve initial presets and plugins
     const { plugins, presets } = Plugin.getPluginsAndPresets({
       cwd: this.cwd,
@@ -302,9 +310,11 @@ export class Service {
       userConfig: this.userConfig,
       prefix,
     });
+    // READCODE initPresets阶段
     // register presets and plugins
     this.stage = ServiceStage.initPresets;
     const presetPlugins: Plugin[] = [];
+    // READCODE 通过while循环加载预设，长度为0停止循环
     while (presets.length) {
       await this.initPreset({
         preset: presets.shift()!,
@@ -312,11 +322,14 @@ export class Service {
         plugins: presetPlugins,
       });
     }
+    // READCODE 预设的插件插入到插件中
     plugins.unshift(...presetPlugins);
+    // READCODE initPlugins阶段
     this.stage = ServiceStage.initPlugins;
     while (plugins.length) {
       await this.initPlugin({ plugin: plugins.shift()!, plugins });
     }
+    // READCODE 检查命令是不是注册了的
     const command = this.commands[name];
     assert(command, `Invalid command ${name}, it's not registered.`);
     // collect configSchemas and configDefaults
@@ -328,6 +341,7 @@ export class Service {
       }
       this.configOnChanges[key] = config.onChange || ConfigChangeType.reload;
     }
+    // READCODE 应用配置阶段
     // setup api.config from modifyConfig and modifyDefaultConfig
     this.stage = ServiceStage.resolveConfig;
     const { config, defaultConfig } = await this.resolveConfig();
@@ -340,6 +354,7 @@ export class Service {
       key: 'modifyPaths',
       initialValue: paths,
     });
+    // READCODE 连接app数据阶段
     // applyPlugin collect app data
     // TODO: some data is mutable
     this.stage = ServiceStage.collectAppData;
@@ -372,16 +387,19 @@ export class Service {
         // env
       },
     });
+    // READCODE 检测阶段
     // applyPlugin onCheck
     this.stage = ServiceStage.onCheck;
     await this.applyPlugins({
       key: 'onCheck',
     });
+    // READCODE 开始
     // applyPlugin onStart
     this.stage = ServiceStage.onStart;
     await this.applyPlugins({
       key: 'onStart',
     });
+    // READCODE 运行命令阶段
     // run command
     this.stage = ServiceStage.runCommand;
     let ret = await command.fn({ args });
@@ -389,6 +407,7 @@ export class Service {
     return ret;
   }
 
+  // READCODE 返回配置和默认配置
   async resolveConfig() {
     // configManager and paths are not available until the init stage
     assert(
@@ -431,6 +450,7 @@ export class Service {
     }
   }
 
+  // READCODE 初始化预设
   async initPreset(opts: {
     preset: Plugin;
     presets: Plugin[];
@@ -445,11 +465,13 @@ export class Service {
     opts.plugins.push(...(plugins || []));
   }
 
+  // READCODE 初始化插件
   async initPlugin(opts: {
     plugin: Plugin;
     presets?: Plugin[];
     plugins: Plugin[];
   }) {
+    // READCODE 插件重复注册检测
     // register to this.plugins
     assert(
       !this.plugins[opts.plugin.id],

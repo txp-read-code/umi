@@ -7,6 +7,7 @@ function winJoin(...args: string[]) {
   return winPath(join(...args));
 }
 
+// READCODE 获取路径方法: cwd、src、pages、apiroutes、tmp、node_modules、输出的绝对路径
 export function getPaths(opts: { cwd: string; prefix: string; env: Env }) {
   const cwd = opts.cwd;
   const src = winJoin(cwd, 'src');
