@@ -1410,7 +1410,7 @@
                   },
                   "path.ts": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/core/src/service/path.ts",
-                    "isRead": false
+                    "isRead": true
                   },
                   "plugin.ts": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/core/src/service/plugin.ts",
@@ -2305,7 +2305,7 @@
         "dir": {
           ".fatherrc.ts": {
             "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/.fatherrc.ts",
-            "isRead": false
+            "isRead": true
           },
           "client": {
             "dir": {
@@ -2313,7 +2313,7 @@
                 "dir": {
                   "index.ts": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-blog/index.ts",
-                    "isRead": false
+                    "isRead": true
                   }
                 },
                 "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-blog"
@@ -2322,139 +2322,139 @@
                 "dir": {
                   "Github.tsx": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/Github.tsx",
-                    "isRead": false
+                    "isRead": true
                   },
                   "Head.tsx": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/Head.tsx",
-                    "isRead": false
+                    "isRead": true
                   },
                   "LangSwitch.tsx": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/LangSwitch.tsx",
-                    "isRead": false
+                    "isRead": true
                   },
                   "Layout.tsx": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/Layout.tsx",
-                    "isRead": false
+                    "isRead": true
                   },
                   "Logo.tsx": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/Logo.tsx",
-                    "isRead": false
+                    "isRead": true
                   },
                   "NavBar.tsx": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/NavBar.tsx",
-                    "isRead": false
+                    "isRead": true
                   },
                   "Search.tsx": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/Search.tsx",
-                    "isRead": false
+                    "isRead": true
                   },
                   "Sidebar.tsx": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/Sidebar.tsx",
-                    "isRead": false
+                    "isRead": true
                   },
                   "ThemeSwitch.tsx": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/ThemeSwitch.tsx",
-                    "isRead": false
+                    "isRead": true
                   },
                   "Tip.tsx": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/Tip.tsx",
-                    "isRead": false
+                    "isRead": true
                   },
                   "Toc.tsx": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/Toc.tsx",
-                    "isRead": false
+                    "isRead": true
                   },
                   "VersionSwitch.tsx": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/VersionSwitch.tsx",
-                    "isRead": false
+                    "isRead": true
                   },
                   "components": {
                     "dir": {
                       "Announcement.tsx": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/components/Announcement.tsx",
-                        "isRead": false
+                        "isRead": true
                       },
                       "FeatureItem.tsx": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/components/FeatureItem.tsx",
-                        "isRead": false
+                        "isRead": true
                       },
                       "Features.tsx": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/components/Features.tsx",
-                        "isRead": false
+                        "isRead": true
                       },
                       "Hero.tsx": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/components/Hero.tsx",
-                        "isRead": false
+                        "isRead": true
                       },
                       "Message.tsx": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/components/Message.tsx",
-                        "isRead": false
+                        "isRead": true
                       },
                       "Tabbed.tsx": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/components/Tabbed.tsx",
-                        "isRead": false
+                        "isRead": true
                       }
                     },
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/components"
                   },
                   "context.ts": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/context.ts",
-                    "isRead": false
+                    "isRead": true
                   },
                   "firefox-polyfill.css": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/firefox-polyfill.css",
-                    "isRead": false
+                    "isRead": true
                   },
                   "icons": {
                     "dir": {
                       "github.svg": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/icons/github.svg",
-                        "isRead": false
+                        "isRead": true
                       },
                       "hero-bg.svg": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/icons/hero-bg.svg",
-                        "isRead": false
+                        "isRead": true
                       },
                       "link.svg": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/icons/link.svg",
-                        "isRead": false
+                        "isRead": true
                       },
                       "moon.png": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/icons/moon.png",
-                        "isRead": false
+                        "isRead": true
                       },
                       "star.png": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/icons/star.png",
-                        "isRead": false
+                        "isRead": true
                       },
                       "sun.png": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/icons/sun.png",
-                        "isRead": false
+                        "isRead": true
                       },
                       "umi.png": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/icons/umi.png",
-                        "isRead": false
+                        "isRead": true
                       }
                     },
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/icons"
                   },
                   "index.ts": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/index.ts",
-                    "isRead": false
+                    "isRead": true
                   },
                   "tailwind.css": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/tailwind.css",
-                    "isRead": false
+                    "isRead": true
                   },
                   "useLanguage.ts": {
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/useLanguage.ts",
-                    "isRead": false
+                    "isRead": true
                   },
                   "utils": {
                     "dir": {
                       "getTocTitle.ts": {
                         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/utils/getTocTitle.ts",
-                        "isRead": false
+                        "isRead": true
                       }
                     },
                     "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/client/theme-doc/utils"
@@ -2467,36 +2467,36 @@
           },
           "package.json": {
             "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/package.json",
-            "isRead": false
+            "isRead": true
           },
           "src": {
             "dir": {
               "compiler.ts": {
                 "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/src/compiler.ts",
-                "isRead": false
+                "isRead": true
               },
               "index.ts": {
                 "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/src/index.ts",
-                "isRead": false
+                "isRead": true
               },
               "loader.ts": {
                 "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/src/loader.ts",
-                "isRead": false
+                "isRead": true
               },
               "markdown.ts": {
                 "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/src/markdown.ts",
-                "isRead": false
+                "isRead": true
               }
             },
             "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/src"
           },
           "tailwind.config.js": {
             "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/tailwind.config.js",
-            "isRead": false
+            "isRead": true
           },
           "tsconfig.json": {
             "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs/tsconfig.json",
-            "isRead": false
+            "isRead": true
           }
         },
         "path": "/Users/shawdanon/GitHub/txp-read-code/umi/packages/plugin-docs"

@@ -2,7 +2,7 @@
 
 ## Panel
 
-allFile: 772  readFile: 104 percent: 13.47%
+allFile: 772  readFile: 145 percent: 18.78%
 
 ## Detail
 
@@ -343,7 +343,7 @@ allFile: 772  readFile: 104 percent: 13.47%
         - [ ] generatePlugin.ts
         - [ ] generator.ts
         - [ ] hook.ts
-        - [ ] path.ts
+        - [*] path.ts
         - [ ] plugin.ts
         - [ ] pluginAPI.ts
         - [*] service.ts
@@ -549,54 +549,54 @@ allFile: 772  readFile: 104 percent: 13.47%
       - [ ] importParser
         - [ ] _importParser.js
         - [ ] importParser.jison
-  - [ ] plugin-docs
-    - [ ] .fatherrc.ts
-    - [ ] client
-      - [ ] theme-blog
-        - [ ] index.ts
-      - [ ] theme-doc
-        - [ ] Github.tsx
-        - [ ] Head.tsx
-        - [ ] LangSwitch.tsx
-        - [ ] Layout.tsx
-        - [ ] Logo.tsx
-        - [ ] NavBar.tsx
-        - [ ] Search.tsx
-        - [ ] Sidebar.tsx
-        - [ ] ThemeSwitch.tsx
-        - [ ] Tip.tsx
-        - [ ] Toc.tsx
-        - [ ] VersionSwitch.tsx
-        - [ ] components
-          - [ ] Announcement.tsx
-          - [ ] FeatureItem.tsx
-          - [ ] Features.tsx
-          - [ ] Hero.tsx
-          - [ ] Message.tsx
-          - [ ] Tabbed.tsx
-        - [ ] context.ts
-        - [ ] firefox-polyfill.css
-        - [ ] icons
-          - [ ] github.svg
-          - [ ] hero-bg.svg
-          - [ ] link.svg
-          - [ ] moon.png
-          - [ ] star.png
-          - [ ] sun.png
-          - [ ] umi.png
-        - [ ] index.ts
-        - [ ] tailwind.css
-        - [ ] useLanguage.ts
-        - [ ] utils
-          - [ ] getTocTitle.ts
-    - [ ] package.json
-    - [ ] src
-      - [ ] compiler.ts
-      - [ ] index.ts
-      - [ ] loader.ts
-      - [ ] markdown.ts
-    - [ ] tailwind.config.js
-    - [ ] tsconfig.json
+  - [*] plugin-docs
+    - [*] .fatherrc.ts
+    - [*] client
+      - [*] theme-blog
+        - [*] index.ts
+      - [*] theme-doc
+        - [*] Github.tsx
+        - [*] Head.tsx
+        - [*] LangSwitch.tsx
+        - [*] Layout.tsx
+        - [*] Logo.tsx
+        - [*] NavBar.tsx
+        - [*] Search.tsx
+        - [*] Sidebar.tsx
+        - [*] ThemeSwitch.tsx
+        - [*] Tip.tsx
+        - [*] Toc.tsx
+        - [*] VersionSwitch.tsx
+        - [*] components
+          - [*] Announcement.tsx
+          - [*] FeatureItem.tsx
+          - [*] Features.tsx
+          - [*] Hero.tsx
+          - [*] Message.tsx
+          - [*] Tabbed.tsx
+        - [*] context.ts
+        - [*] firefox-polyfill.css
+        - [*] icons
+          - [*] github.svg
+          - [*] hero-bg.svg
+          - [*] link.svg
+          - [*] moon.png
+          - [*] star.png
+          - [*] sun.png
+          - [*] umi.png
+        - [*] index.ts
+        - [*] tailwind.css
+        - [*] useLanguage.ts
+        - [*] utils
+          - [*] getTocTitle.ts
+    - [*] package.json
+    - [*] src
+      - [*] compiler.ts
+      - [*] index.ts
+      - [*] loader.ts
+      - [*] markdown.ts
+    - [*] tailwind.config.js
+    - [*] tsconfig.json
   - [ ] plugins
     - [ ] .fatherrc.ts
     - [ ] libs
