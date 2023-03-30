@@ -2,7 +2,7 @@
 
 ## Panel
 
-allFile: 772  readFile: 145 percent: 18.78%
+allFile: 767  readFile: 143 percent: 18.64%
 
 ## Detail
 
@@ -254,12 +254,9 @@ allFile: 772  readFile: 145 percent: 18.78%
           - [ ] package.json
     - [ ] client
       - [ ] client
-        - [ ] client.d.ts
         - [ ] client.js
-      - [ ] constants.d.ts
       - [ ] constants.js
       - [ ] utils
-        - [ ] formatWebpackMessages.d.ts
         - [ ] formatWebpackMessages.js
     - [ ] package.json
     - [ ] scripts
@@ -918,9 +915,7 @@ allFile: 772  readFile: 145 percent: 18.78%
       - [*] umi.js
     - [*] client
       - [*] client
-        - [*] plugin.d.ts
         - [*] plugin.js
-        - [*] utils.d.ts
         - [*] utils.js
     - [*] eslint.js
     - [*] index.d.ts
